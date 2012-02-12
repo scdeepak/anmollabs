@@ -1,4 +1,11 @@
 Anmollabs::Application.routes.draw do
+  match '/about',    to: 'common_pages#about'
+  match '/contact',  to: 'common_pages#contact'
+  match '/faq',      to: 'common_pages#faq'
+  match '/tos',      to: 'common_pages#tos'
+  
+  root to: 'common_pages#home'  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
